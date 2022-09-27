@@ -46,9 +46,15 @@ logging:
   level:
     com.example.userservice: DEBUG
 
-token:
-  expiration-time: 86400000 # 하루짜리 토큰 생성
-  secret: changhwan2022changhwanchanghwan2022changhwanchanghwan2022changhwanchanghwan2022changhwanchanghwan2022changhwan
+#token:
+#  expiration-time: 86400000 # 하루짜리 토큰 생성
+#  secret: changhwan2022changhwanchanghwan2022changhwanchanghwan2022changhwanchanghwan2022changhwanchanghwan2022changhwan
 
 greeting:
   message: Welcome to the Simple E-commerce.
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans
